@@ -71,7 +71,17 @@ findTwoSumIndices([8, 4, 2, 6], 10); returns [0, 2] since 8 + 2 = 10
 
 - Additional examples (examples three to five) have been included for reference purposes.
 
-## Hints
+## ⚔️ Over To You
+
+**Now it's your turn to tackle this code kata and give it your best shot!!**
+
+Try to complete this own your own first. But if you get stuck you can always refer to the runes contained in the scroll of hints and scroll of solutions below.
+
+> _"Fare thee well, Gandalf the Grey and noble companion, and may the light of your staff ever illuminate the darkest paths before you, and the blade of Glamdring strike true against all who threaten your quest!"_
+
+![Gandalf faces off against the Balrog](./assets/images/lotr-balrog-gandalf.jpg)
+
+## 🧙‍♂️ Hints
 
 TODO - Complete this section.
 
@@ -81,11 +91,11 @@ TODO - Complete this section.
 
 ---
 
-### ⚔️ Fare thee well, Gandalf the Grey, and may the light of your staff ever illuminate the darkest paths before you, and the blade of Glamdring strike true against all who threaten your quest!
+## 📚 Additional Resources
 
-![Gandalf faces off against the Balrog](./assets/images/lotr-balrog-gandalf.jpg)
+TODO - link to installation/usage instructions, your plan document, and the original requirements README.md.
 
-## TODOs (will become Additional Resources)
+## TODOs
 
 - TODO - There is a code commenting TODO left to complete at the top of main.js.
 - TODO - Add an "installation" section to show how to get the project up and running.
@@ -93,7 +103,6 @@ TODO - Complete this section.
 - TODO - Add a collapsible (hidden by default) "solution" section showcasing the final solution (as currently detailed in main.js).
 - TODO - Create a PLANNING.MD document if there is time left. This should contain details above your ideation process, planning process, etc. ALSO LINK to this new PLANNING.md file in the PROJECT_PRESENTATION.md file, as per the TODO below.
 - TODO - Rename README.md to something else and then move the content of PROJECT_PRESENTATION TO README.md to make this file the main readme for your project. THEN JUST ADD SOME TEXT/A LINK TO PROJECT_PRESENTATION.md to say refer to the main README.md file for instructions.
-- TODO - Replace this TODOs section with an Additional Resources section, linking to installation/usage instructions, your plan document, and the original requirements README.md.
 - TODO - IMPORTANT: Remember to delete your "solution" code from main.js and push everything (including this empty function) back up to GitHub.
 - TODO - Run a manual end-to-end test of your entire project.
 - TODO - Finally, reread the original requirements/objective in the original README.md file to make sure you've hit the brief.
