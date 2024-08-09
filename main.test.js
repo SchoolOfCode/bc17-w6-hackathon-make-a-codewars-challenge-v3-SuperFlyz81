@@ -25,6 +25,10 @@ describe("Edge cases", () => {
   test("Verify against a zero-valued target", () => {
     expect(findTwoSumIndices([0, 2, -2, 4], 0)).toEqual([1, 2]); // since 2 + -2 = 0
   });
+
+  test("Test for a target that cannot be satisfied (just expect a blank array)", () => {
+    expect(findTwoSumIndices([1, 2, 3, 4], 8)).toEqual([]); // since the highest possible target here is 7, but we are seeking a target of 8.
+  });
 });
 
 // Complex tests

@@ -28,18 +28,19 @@ function findTwoSumIndices(numbers, target) {
 
 #### 2. Input
 
-- An array "numbers" where each element is an integer, representing the magical power of each spell.
-- An integer "target" which is the total power Gandalf needs.
+- An array `numbers` where each element is an integer, representing the magical power of each spell.
+- An integer `target` which is the total power Gandalf needs.
 
 #### 3. Output
 
 - An array containing two integers.
 - These integers are the indices of the numbers (a.k.a. the magical spell powers) that sum up to the target.
 - **Return these two indices in an array to pass the test.**
+- If the target cannot be satisfied by summing two numbers from the numbers array, then just return an empty array.
 
 #### 4. Constraints
 
-- If there are multiple pairs of numbers whose sum meets the target, return the first pair found (hint: your code will probably do this automatically for you 😉).
+- If there are multiple pairs of numbers whose sum meets the target, return the first pair found (hint: your code will probably do this for you automatically 😉).
 
 ## ✏️ Examples
 
@@ -48,6 +49,7 @@ findTwoSumIndices([2, 4, 6, 8], 10); // returns [0, 3] since 2 + 8 = 10
 findTwoSumIndices([1, 3, 5, 7], 8);  // returns [0, 3] since 1 + 7 = 8
 findTwoSumIndices([1, 2, 3, 4, 5], 9); // returns [3, 4] since 4 + 5 = 9
 findTwoSumIndices([7, 5, 3, 1], 8); returns [0, 3] since 7 + 1 = 8
+findTwoSumIndices([1, 2, 3, 4], 8); returns [] since we cannot satisfy the target
 findTwoSumIndices([8, 4, 2, 6], 10); returns [0, 2] since 8 + 2 = 10
 ```
 
@@ -69,7 +71,7 @@ findTwoSumIndices([8, 4, 2, 6], 10); returns [0, 2] since 8 + 2 = 10
 
 ##### Further examples
 
-- Additional examples (examples three to five) have been included for reference purposes.
+- Additional examples (examples three to six) have been included for reference purposes.
 
 ## ⚔️ Over To You
 
@@ -83,13 +85,88 @@ Try to complete this on your own first. But if you get stuck you can always refe
 
 ## 🧙‍♂️ Hints
 
-TODO - Complete this section.
+### 🪄 Hint 1: Help! I don't even know where to start
 
-## Solution
+<details>
+  <summary>Click here to see the hint</summary>
+As mentioned at the beginning of this document, the two sum problem is an array processing problem. So begin by writing a nested `for` loop (a for loop within another for loop) to iterate through all possible numbers in the `numbers` array.
+</details>
 
-TODO - Complete this section.
+### 🪄 Hint 2: I'm still stuck, how about some pseudo code to help me out?
 
----
+<details>
+  <summary>Click here to see the hint</summary>
+Sure thing, here you go...
+
+```
+export function findTwoSumIndices(numbers, target) {
+  // Loop through the numbers
+
+    // Compare every other number that comes after the current number
+
+      // If the sum of the current number and the next number equals the target, return their
+
+// If no such pair is found, return an empty array
+}
+```
+
+</details>
+
+### 🪄 Hint 3: By Durin's Beard, I'm still at a loss! Please provide me with a redacted code example and I'll fill in the blanks
+
+<details>
+  <summary>Click here to see the hint</summary>
+Your wish is my command... Just fill in the #'s bellow with variable names, letters, or numbers to complete the findTwoSumIndices() function.
+
+```
+export function findTwoSumIndices(numbers, target) {
+  // Loop through the numbers
+  for (let i = 0; i < numbers.length; i++) {
+    // Compare every other number that comes after the current number
+    for (let j = i + #; j < numbers.length; j++) {
+      // If the sum of the current number and the next number equals the target, return their indices
+      if (numbers[#] + numbers[#] === target) {
+        return [#, #];
+      }
+    }
+  }
+
+  return []; // If no such pair is found, return an empty array
+}
+```
+
+</details>
+
+## 🛠️ Solutions
+
+### 💡 Solution 1: The most basic implementation
+
+<details>
+  <summary>Click here to see the most basic implementation for solving the two sum problem</summary>
+
+```
+export function findTwoSumIndices(numbers, target) {
+   // Loop through the numbers
+  for (let i = 0; i < numbers.length; i++) {
+    // Compare every other number that comes after the current number
+    for (let j = i + 1; j < numbers.length; j++) {
+      // If the sum of the current number and the next number equals the target, return their indices
+      if (numbers[i] + numbers[j] === target) {
+        return [i, j];
+      }
+    }
+  }
+
+  return []; // If no such pair is found, return an empty array
+}
+
+```
+
+</details>
+
+### 💡 Other Possible Solutions
+
+There may be more advanced solutions to the two sum problem. For example, the for loops above could be replaced by JavaScript array methods like `forEach` or `map`. Try to copy and paste the code above into your favourite AI companion 🤖. Then ask it for more advanced or concise JavaScript code examples to solve the two sum problem.
 
 ## 📚 Additional Resources
 
@@ -98,11 +175,15 @@ TODO - link to installation/usage instructions, your plan document, and the orig
 ## TODOs
 
 - Rename README.md to something else and then move the content of PROJECT_PRESENTATION TO README.md to make this file the main readme for your project. ✅
-- There is a code commenting TODO left to complete at the top of main.js.
+- There is a code commenting TODO left to complete at the top of main.js. ✅
+- Add a collapsible (hidden by default) "hints" section with multiple layers of hints. ✅
+- Add a collapsible (hidden by default) "solution" section showcasing the final solution (as currently detailed in main.js). ✅
 - Add an "installation" section to show how to get the project up and running.
-- Add a collapsible (hidden by default) "hints" section with multiple layers of hints.
-- Add a collapsible (hidden by default) "solution" section showcasing the final solution (as currently detailed in main.js).
 - Create a PLANNING.MD document if there is time left. This should contain details above your ideation process, planning process, etc. ALSO LINK to this new PLANNING.md file in your new README.md file.
 - IMPORTANT: Remember to delete your "solution" code from main.js and push everything (including this empty function) back up to GitHub.
 - Run a manual end-to-end test of your entire project.
 - Finally, reread the original requirements/objective in the original README.md file to make sure you've hit the brief.
+
+```
+
+```

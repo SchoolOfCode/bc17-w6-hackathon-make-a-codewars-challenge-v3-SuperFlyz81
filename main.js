@@ -1,12 +1,26 @@
 /**
- * Hello brave companion! Your task is to write a function named "findTwoSumIndices".
+ * Kata: You Shall Not Pass! A Two Sum Problem-Solving Quest.
  *
- * This
- * Your implementation should handle strings whose length is between 0 (inclusive) and 2500 (inclusive).
+ * Hello brave companion!
+ *
+ * Your task is to write a function named `findTwoSumIndices` to solve the Two Sum problem.
+ * And help Gandalf, a great wizard but not much of a coder, save the "fellowship" in the process.
+ *
+ * The two sum problem is a common coding challenge where you're given an array of numbers and a target sum.
+ * Your task is to find two distinct numbers in the array that add up to the target sum and return their indices.
+ * If no such pair exists, just return a blank array.
  *
  * A few examples:
- *    `transformLength("table")` should return -1 as the length of "table" is not even
- *    `transformLength("wizard")` should return 1 as the length of "wizard" is even
+ *    `findTwoSumIndices([1, 2, 3, 4, 5], 9))` should return [3, 4], since 4 + 5 = 9
+ *    `findTwoSumIndices([7, 5, 3, 1], 8))` should return [0, 3], since 7 + 1 = 8
+ *
+ *  PLEASE SEE THE README.ME FILE IN THIS PROJECT FOR:
+ *  - Full details on the two sum problems (including a fun story).
+ *  - Required inputs and outputs for the `findTwoSumIndices` function below.
+ *  - Even more examples.
+ *  - Hints and solutions.
+ *
+ * Now go forth dear friend and good luck on your noble quest!
  */
 export function findTwoSumIndices(numbers, target) {
   // Good luck!
