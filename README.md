@@ -170,7 +170,17 @@ There may be more advanced solutions to the two sum problem. For example, the fo
 
 ## 📚 Additional Resources
 
-TODO - link to installation/usage instructions, your plan document, and the original requirements README.md.
+#### Installing the code kata and getting up and running
+
+- See the [/docs/INSTALLATION_AND_USAGE.md](./docs/INSTALLATION_AND_USAGE.md) file
+
+#### Planning
+
+- See the [/docs/PLANNING.md](./docs/PLANNING.md) file
+
+#### Original requirements for this code kata hackathon
+
+- See the [/docs/REQUIREMENTS.md](./docs/REQUIREMENTS.md) file
 
 ## TODOs
 
@@ -178,8 +188,8 @@ TODO - link to installation/usage instructions, your plan document, and the orig
 - There is a code commenting TODO left to complete at the top of main.js. ✅
 - Add a collapsible (hidden by default) "hints" section with multiple layers of hints. ✅
 - Add a collapsible (hidden by default) "solution" section showcasing the final solution (as currently detailed in main.js). ✅
+- Create a PLANNING.MD document if there is time left. This should contain details above your ideation process, planning process, etc. ALSO LINK to this new PLANNING.md file in your new README.md file. ✅
 - Add an "installation" section to show how to get the project up and running.
-- Create a PLANNING.MD document if there is time left. This should contain details above your ideation process, planning process, etc. ALSO LINK to this new PLANNING.md file in your new README.md file.
 - IMPORTANT: Remember to delete your "solution" code from main.js and push everything (including this empty function) back up to GitHub.
 - Run a manual end-to-end test of your entire project.
 - Finally, reread the original requirements/objective in the original README.md file to make sure you've hit the brief.

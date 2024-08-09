@@ -23,7 +23,7 @@
  * Now go forth dear friend and good luck on your noble quest!
  */
 export function findTwoSumIndices(numbers, target) {
-  // Good luck!
+  // Your code goes here. Good luck!
 
   // Loop through the numbers
   for (let i = 0; i < numbers.length; i++) {
