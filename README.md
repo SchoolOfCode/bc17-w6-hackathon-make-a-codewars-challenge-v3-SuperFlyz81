@@ -1,114 +1,108 @@
-# Make your own Codewars Style Challenge
+# 🔥 Kata: You Shall Not Pass! A Two Sum Problem-Solving Quest 🔥
 
-In this workshop, you'll create your own programming challenge for others to solve, similar to the ones you might have tackled on Codewars. You'll write unit tests to validate solutions. Then you can share your challenge with other bootcampers for them to solve. If a submitted solution passes all your tests, it will be considered a correct solution - just like on Codewars. This is a great chance to get creative and come up with a programming challenge to stump your peers!
+### Help Gandalf defeat the Balrog by solving the <ins>Two Sum Problem</ins>.
 
-## 💡 OBJECTIVES FOR THE WORKSHOP
+![You Shall Not Pass!](./assets/images/lotr-you-shall-not-pass.gif)
 
-Here's a glimpse of what you'll be achieving by the end of this workshop:
+The two sum software engineering problem is commonly found in junior developer interviews and tech tests. It falls under the category of algorithmic problems related to array processing. This code kata will teach you how to solve the two-sum problem, just in time for your next developer interview, and to save the "fellowship" from a scorching "Balrog barbecue"!
 
-- Clearly describing a problem/task that you want others to solve
-- Writing unit tests to check whether their solution to your task is correct
-- Present your project plan, story, and anything else you feel supports your creation process and final outcome in a document
+## 📜 Lore
 
-## 🎟️ TICKETS
+Gandalf the Grey is engaged in a battle of epic proportions on the Bridge of Khazad-dûm, deep in the Mines of Moria. His arch-nemesis, the Balrog, is roaring, fire is blazing, and Gandalf is running out of clever one-liners. "You shall not pass!" is not cutting it anymore.
 
-Time to dive into action! 🏊‍♂️ Here's what you'll be working on:
+To save the day, he needs to combine exactly two of his magical spells to match the precise power needed to vanquish the Balrog. The spells are a bit quirky and have power levels represented by integers. Gandalf, being a wizard but not exactly a JavaScript developer, needs your help to figure out which two spells to use.
 
-### 🎫 Ticket 1 - Setup
+## 📋 Task
 
-Install Vitest and optionally set up an NPM `test` script that conveniently runs your tests.
+Given an array of integers representing the power levels of Gandalf's spells and an integer target representing the exact power needed to defeat the Balrog, you must find <ins>the indices</ins> of the two spells whose combined power matches the target. Remember, Gandalf can’t just wave his staff and magically know the answer—he’s counting on you!
 
-You will be making one kata each, but you will be in development teams. The aim is to co-elevate each other. There are several ways you can and should look to help each other:
+## ✅ Requirements
 
-- Brainstorming: Helping each make your ideas better, and giving feedback to each other to add different perspectives and improve the end product
-- Planning: You can help validate each others plans, and sense check in a team review the direction of your products
-- Check-ins: Regular team stand-ups / check-ins will help make sure you are building and making progress together
-- Support: You should aim to help each other overcome issues if one of your team is stuck and cannot Google their way out of it
-- Testing: You can act as a first line user test for each others katas. You might find it a good idea to book in regular checkpoints to demo to each other and get initial feedback in quick bursts, making sure you can build in and adapt to any useful feedback before official release of your katas
+#### 1. Function Signature
 
-### 🎫 Ticket 2 - Plan your kata
-
-Attack this as you would any other problem - plan, plan, plan and use our agile approach to create steps that allow you to build MVPs and incrementally reach your stretch goals. Brainstorm options with a technique like Disney Ideation. Once you have a compelling challenge and story idea, start breaking it down. Think about the goals of your challenge, and the scenarios you could provide to test if people have reached those goals. Provide any examples or additional details that are necessary for someone taking on your kata to understand the problem, but don't give away so much that it removes the challenge. You want to strike a balance - not too vague but not spoon-feeding the solution either.
-
-Write your kata's scenario in a comment in `main.js` and include the start of an exported function that your audience will use to solve it (like you've seen on the katas you've done before). If it's useful to see an example:
-
-```js
-/**
- * Hello challenger! Your task is to write a function named `transformLength` which takes in a string and returns 1 if the length of the string is even and otherwise -1.
- *
- * Your implementation should handle strings whose length is between 0 (inclusive) and 2500 (inclusive).
- *
- * A few examples:
- *    `transformLength("table")` should return -1 as the length of "table" is not even
- *    `transformLength("wizard")` should return 1 as the length of "wizard" is even
- */
-export function transformLength(string) {
-  // Good luck!
+```
+function findTwoSumIndices(numbers, target) {
+  // Your code goes here
 }
 ```
 
-ℹ️ The reason for leaving the function body empty is that you want the people solving your kata to write their own implementation from scratch. Your role is to provide the overall problem statement and function skeleton. The solving and coding is up to them! Leaving an incomplete skeleton function helps point them in the right direction without giving away a full working solution.
+#### 2. Input
 
-### 🎫 Ticket 3 - Write your kata
+- An array "numbers" where each element is an integer, representing the magical power of each spell.
+- An integer "target" which is the total power Gandalf needs.
 
-When drafting your test cases, consider the different inputs that could be passed to the solution function and any edge cases you want to account for. You could put into practice tools such as Equivalency Partitioning, Boundary Value Analysis, and Decision Tables if its useful. Think of test values that will thoroughly cover the expected functionality. The number of tests is up to you, but aim for sufficient coverage to validate correctness.
+#### 3. Output
 
-Since you'll write tests before seeing people's solutions, focus on defining expected outputs for given inputs, without assumptions about how people actually wrote the code. You're testing for outcomes. You could follow a TDD workflow - write a failing test, then temporarily add code to pass it. Just be sure to remove the solution code before sharing the kata. This helps ensure your tests fail when logic is missing or incorrect and pass when implemented properly.
+- An array containing two integers.
+- These integers are the indices of the numbers (a.k.a. the magical spell powers) that sum up to the target.
+- **Return these two indices in an array to pass the test.**
 
-If it's useful to see an example (continuing the `checkLength` example from earlier):
+#### 4. Constraints
 
-```js
-import { test, expect } from "vitest";
-import { checkLength } from "./main.js";
+- If there are multiple pairs of numbers whose sum meets the target, return the first pair found (hint: your code will probably do this automatically for you 😉).
 
-test("should return -1 for strings with an odd length", () => {
-  const expected = -1;
-  const actual = checkLength("table");
-  expect(actual).toBe(expected);
-});
-
-test("should return 1 for strings with an even length", () => {
-  const expected = 1;
-  const actual = checkLength("wizard");
-  expect(actual).toBe(expected);
-});
-```
-
-🎯 At this stage you should have a description of the problem in `main.js` and some tests in `main.test.js`.
-
-### 🎫 Ticket 4 - Check your tests
-
-To verify your tests, temporarily add a working implementation to the solution function in `main.js`. Check that the tests fail before implementation and pass when the function is coded correctly. This validates that your tests accurately check for both incorrect and correct solutions. Remember to remove the solution code afterwards before sharing the kata.
-
-If it's useful to see an example (continuing the `checkLength` example from earlier):
-
-```js
-export function checkLength(string) {
-  // Temporarily added the line below to check if tests pass, but will remove it before committing and pushing.
-  return string.length % 2 === 0 ? 1 : -1;
-}
-```
-
-### 🎫 Ticket 5 - Share your kata
-
-Before pushing your final kata repository, be sure to remove any solution code you added for test validation. You want to provide only the kata description, skeleton function, and test cases - no actual solutions. Once ready, share your repo link in the [learn.schoolofcode.co.uk Hackathon Channel](https://learn.schoolofcode.co.uk/path-player?courseid=bc17-qe&unit=66acf966524bf23f05018063Unit) so other bootcampers can find it, clone it, implement solutions, and run your tests to check their progress. This allows them to solve the programming challenge you've created!
-
-Share it with following format:
+## ✏️ Examples
 
 ```
-Room: REPLACE_ME_WITH_YOUR_ROOM_NUMBER
-Name: REPLACE_ME_WITH_YOUR_NAME
-Link: REPLACE_ME_WITH_A_LINK_TO_YOUR_PUBLIC_GITHUB_REPO_CONTAINING_THE_KATA
-Overview: REPLACE_ME_WITH_A_BRIEF_DESCRIPTION_OF_WHAT_YOUR_KATA_IS_ABOUT
+findTwoSumIndices([2, 4, 6, 8], 10); // returns [0, 3] since 2 + 8 = 10
+findTwoSumIndices([1, 3, 5, 7], 8);  // returns [0, 3] since 1 + 7 = 8
+findTwoSumIndices([1, 2, 3, 4, 5], 9); // returns [3, 4] since 4 + 5 = 9
+findTwoSumIndices([7, 5, 3, 1], 8); returns [0, 3] since 7 + 1 = 8
+findTwoSumIndices([8, 4, 2, 6], 10); returns [0, 2] since 8 + 2 = 10
 ```
 
-If it's not public already, remember to change the visibility of your repository to public.
+#### Explanations
 
-### 🎫 Ticket 6 - Present you kata
+##### In the first example
 
-Make sure you present your project in the markdown file - this will be assessed alongside your actual kata. Treat this as an asynchronous presentation - anything you would want to talk through (plans, brainstorming, final results, user feedback, etc) should go in here.
+- Gandalf’s spell list is [2, 4, 6, 8].
+- The target power is 10.
+- The spell at index 0 has a power level of 2, and the spell at index 3 has a power level of 8.
+- When these two spells combine their powers, they total 10, saving the day and proving Gandalf's wizardry isn’t just for show. The function returns [0, 3].
 
-### 🎫 Ticket 7 - Complete katas from others
+##### In the second example
 
-To solve katas created by other bootcampers, first clone their repository using the shared link. `cd` into the folder, run `npm install` to get the dependencies, then implement a solution in main.js. Execute their test cases to validate your code against their requirements. Provide feedback on the clarity of their instructions, difficulty level, and effectiveness of the tests. Engaging with each other's challenges allows everyone to learn. Make sure to critique respectfully - creating a programming challenge is difficult!
+- Gandalf’s spell list is [1, 3, 5, 7].
+- The target is 8.
+- The spell at index 0 has a power level of 1, and the spell at index 3 has a power level of 7.
+- Combining these spells gives a total of 8, so the function returns [0, 3].
 
+##### Further examples
+
+- Additional examples (examples three to five) have been included for reference purposes.
+
+## ⚔️ Over To You
+
+**Now it's your turn to tackle this code kata and give it your best shot!!**
+
+Try to complete this on your own first. But if you get stuck you can always refer to the runes contained in the scroll of hints and scroll of solutions below.
+
+> _"Fare thee well, Gandalf the Grey and noble companion, and may the light of your staff ever illuminate the darkest paths before you, and the blade of Glamdring strike true against all who threaten your quest!"_
+
+![Gandalf faces off against the Balrog](./assets/images/lotr-balrog-gandalf.jpg)
+
+## 🧙‍♂️ Hints
+
+TODO - Complete this section.
+
+## Solution
+
+TODO - Complete this section.
+
+---
+
+## 📚 Additional Resources
+
+TODO - link to installation/usage instructions, your plan document, and the original requirements README.md.
+
+## TODOs
+
+- TODO - There is a code commenting TODO left to complete at the top of main.js.
+- TODO - Add an "installation" section to show how to get the project up and running.
+- TODO - Add a collapsible (hidden by default) "hints" section with multiple layers of hints.
+- TODO - Add a collapsible (hidden by default) "solution" section showcasing the final solution (as currently detailed in main.js).
+- TODO - Create a PLANNING.MD document if there is time left. This should contain details above your ideation process, planning process, etc. ALSO LINK to this new PLANNING.md file in the PROJECT_PRESENTATION.md file, as per the TODO below.
+- TODO - Rename README.md to something else and then move the content of PROJECT_PRESENTATION TO README.md to make this file the main readme for your project. THEN JUST ADD SOME TEXT/A LINK TO PROJECT_PRESENTATION.md to say refer to the main README.md file for instructions.
+- TODO - IMPORTANT: Remember to delete your "solution" code from main.js and push everything (including this empty function) back up to GitHub.
+- TODO - Run a manual end-to-end test of your entire project.
+- TODO - Finally, reread the original requirements/objective in the original README.md file to make sure you've hit the brief.
