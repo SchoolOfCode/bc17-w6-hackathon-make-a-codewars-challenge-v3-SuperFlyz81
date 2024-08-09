@@ -1,4 +1,4 @@
-// TODO - Write Kata Scenario Here
+// TODO - Write Kata Scenario Here - see original README.md for an example
 export function findTwoSumIndices(numbers, target) {
   // Good luck!
 

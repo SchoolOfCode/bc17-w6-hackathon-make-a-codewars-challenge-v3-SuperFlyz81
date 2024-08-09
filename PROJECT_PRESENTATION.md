@@ -1,22 +1,22 @@
-# 🔥 Kata: You Shall Not Pass! 🔥
+# 🔥 Kata: You Shall Not Pass! A Two Sum Problem-Solving Quest 🔥
 
 ### Help Gandalf defeat the Balrog by solving the <ins>Two Sum Problem</ins>.
 
 ![You Shall Not Pass!](./assets/images/lotr-you-shall-not-pass.gif)
 
-The two sum problem is commonly found in junior developer interviews and tech tests. So now is a great time to learn how to solve it (and save the entire "fellowship" in the process)!
+The two sum software engineering problem is commonly found in junior developer interviews and tech tests. It falls under the category of algorithmic problems related to array processing. This code kata will teach you how to solve the two-sum problem, just in time for your next developer interview, and to save the "fellowship" from a scorching "Balrog barbecue"!
 
-## Lore 📜
+## 📜 Lore
 
 Gandalf the Grey is engaged in a battle of epic proportions on the Bridge of Khazad-dûm, deep in the Mines of Moria. His arch-nemesis, the Balrog, is roaring, fire is blazing, and Gandalf is running out of clever one-liners. "You shall not pass!" is not cutting it anymore.
 
 To save the day, he needs to combine exactly two of his magical spells to match the precise power needed to vanquish the Balrog. The spells are a bit quirky and have power levels represented by integers. Gandalf, being a wizard but not exactly a JavaScript developer, needs your help to figure out which two spells to use.
 
-## Task 📋
+## 📋 Task
 
 Given an array of integers representing the power levels of Gandalf's spells and an integer target representing the exact power needed to defeat the Balrog, you must find <ins>the indices</ins> of the two spells whose combined power matches the target. Remember, Gandalf can’t just wave his staff and magically know the answer—he’s counting on you!
 
-## Requirements ✅
+## ✅ Requirements
 
 #### 1. Function Signature
 
@@ -37,7 +37,11 @@ function findTwoSumIndices(numbers, target) {
 - These integers are the indices of the numbers (a.k.a. the magical spell powers) that sum up to the target.
 - **Return these two indices in an array to pass the test.**
 
-## Examples ✏️
+#### 4. Constraints
+
+- If there are multiple pairs of numbers whose sum meets the target, return the first pair found (hint: your code will probably do this automatically for you 😉).
+
+## ✏️ Examples
 
 ```
 findTwoSumIndices([2, 4, 6, 8], 10); // returns [0, 3] since 2 + 8 = 10
@@ -65,10 +69,31 @@ findTwoSumIndices([8, 4, 2, 6], 10); returns [0, 2] since 8 + 2 = 10
 
 ##### Further examples
 
-- Further examples (examples three to five) have been provided for the sake of reference.
+- Additional examples (examples three to five) have been included for reference purposes.
+
+## Hints
+
+TODO - Complete this section.
+
+## Solution
+
+TODO - Complete this section.
 
 ---
 
-### Fare thee well, Gandalf the Grey, and may the light of your staff ever illuminate the darkest paths before you, and the blade of Glamdring strike true against all who threaten your quest!
+### ⚔️ Fare thee well, Gandalf the Grey, and may the light of your staff ever illuminate the darkest paths before you, and the blade of Glamdring strike true against all who threaten your quest!
 
 ![Gandalf faces off against the Balrog](./assets/images/lotr-balrog-gandalf.jpg)
+
+## TODOs (will become Additional Resources)
+
+- TODO - There is a code commenting TODO left to complete at the top of main.js.
+- TODO - Add an "installation" section to show how to get the project up and running.
+- TODO - Add a collapsible (hidden by default) "hints" section with multiple layers of hints.
+- TODO - Add a collapsible (hidden by default) "solution" section showcasing the final solution (as currently detailed in main.js).
+- TODO - Create a PLANNING.MD document if there is time left. This should contain details above your ideation process, planning process, etc. ALSO LINK to this new PLANNING.md file in the PROJECT_PRESENTATION.md file, as per the TODO below.
+- TODO - Rename README.md to something else and then move the content of PROJECT_PRESENTATION TO README.md to make this file the main readme for your project. THEN JUST ADD SOME TEXT/A LINK TO PROJECT_PRESENTATION.md to say refer to the main README.md file for instructions.
+- TODO - Replace this TODOs section with an Additional Resources section, linking to installation/usage instructions, your plan document, and the original requirements README.md.
+- TODO - IMPORTANT: Remember to delete your "solution" code from main.js and push everything (including this empty function) back up to GitHub.
+- TODO - Run a manual end-to-end test of your entire project.
+- TODO - Finally, reread the original requirements/objective in the original README.md file to make sure you've hit the brief.
