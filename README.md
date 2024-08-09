@@ -89,7 +89,7 @@ Try to complete this on your own first. But if you get stuck you can always refe
 
 <details>
   <summary>Click here to see the hint</summary>
-As mentioned at the beginning of this document, the two sum problem is an array processing problem. So begin by writing a nested `for` loop (a for loop within another for loop) to iterate through all possible numbers in the `numbers` array.
+As mentioned at the beginning of this document, the two sum problem is an array processing problem. So begin by writing a nested `for` loop (a for loop within another for loop) to iterate through all possible combinations in the `numbers` array.
 </details>
 
 ### 🪄 Hint 2: I'm still stuck, how about some pseudo code to help me out?
@@ -168,6 +168,8 @@ export function findTwoSumIndices(numbers, target) {
 
 There may be more advanced solutions to the two sum problem. For example, the for loops above could be replaced by JavaScript array methods like `forEach` or `map`. Try to copy and paste the code above into your favourite AI companion 🤖. Then ask it for more advanced or concise JavaScript code examples to solve the two sum problem.
 
+![Smoke Rings](./assets/images/lotr-smoke-rings.gif)
+
 ## 📚 Additional Resources
 
 #### Installing the code kata and getting up and running
@@ -181,3 +183,10 @@ There may be more advanced solutions to the two sum problem. For example, the fo
 #### Original requirements for this code kata hackathon
 
 - See the [/docs/REQUIREMENTS.md](./docs/REQUIREMENTS.md) file
+
+## 📖 Further Learning
+
+If you liked solving the two sum problem, have a look at bubble sorting here:  
+[https://flexiple.com/javascript/bubble-sort-javascript](https://flexiple.com/javascript/bubble-sort-javascript)
+
+The two concepts are very similar and bubble sort, being the simplest algorithm to sort data, is also a very popular topic in real-world, junior-level developer interviews.
