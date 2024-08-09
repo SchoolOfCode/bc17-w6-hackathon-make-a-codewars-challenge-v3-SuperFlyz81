@@ -1,4 +1,4 @@
-# Planning - JavaScript Code Kata - Solve the Two Sum Problem
+# Planning - JavaScript Code Kata Hackathon - Solve the Two Sum Problem
 
 ## Ideation
 
