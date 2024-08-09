@@ -73,7 +73,7 @@ findTwoSumIndices([8, 4, 2, 6], 10); returns [0, 2] since 8 + 2 = 10
 
 ## ⚔️ Over To You
 
-**Now it's your turn to tackle this code kata and give it your best shot!!**
+**Now it's your turn to tackle this code kata and give it your best shot!**
 
 Try to complete this on your own first. But if you get stuck you can always refer to the runes contained in the scroll of hints and scroll of solutions below.
 
@@ -97,12 +97,12 @@ TODO - link to installation/usage instructions, your plan document, and the orig
 
 ## TODOs
 
-- TODO - There is a code commenting TODO left to complete at the top of main.js.
-- TODO - Add an "installation" section to show how to get the project up and running.
-- TODO - Add a collapsible (hidden by default) "hints" section with multiple layers of hints.
-- TODO - Add a collapsible (hidden by default) "solution" section showcasing the final solution (as currently detailed in main.js).
-- TODO - Create a PLANNING.MD document if there is time left. This should contain details above your ideation process, planning process, etc. ALSO LINK to this new PLANNING.md file in the PROJECT_PRESENTATION.md file, as per the TODO below.
-- TODO - Rename README.md to something else and then move the content of PROJECT_PRESENTATION TO README.md to make this file the main readme for your project. THEN JUST ADD SOME TEXT/A LINK TO PROJECT_PRESENTATION.md to say refer to the main README.md file for instructions.
-- TODO - IMPORTANT: Remember to delete your "solution" code from main.js and push everything (including this empty function) back up to GitHub.
-- TODO - Run a manual end-to-end test of your entire project.
-- TODO - Finally, reread the original requirements/objective in the original README.md file to make sure you've hit the brief.
+- Rename README.md to something else and then move the content of PROJECT_PRESENTATION TO README.md to make this file the main readme for your project. ✅
+- There is a code commenting TODO left to complete at the top of main.js.
+- Add an "installation" section to show how to get the project up and running.
+- Add a collapsible (hidden by default) "hints" section with multiple layers of hints.
+- Add a collapsible (hidden by default) "solution" section showcasing the final solution (as currently detailed in main.js).
+- Create a PLANNING.MD document if there is time left. This should contain details above your ideation process, planning process, etc. ALSO LINK to this new PLANNING.md file in your new README.md file.
+- IMPORTANT: Remember to delete your "solution" code from main.js and push everything (including this empty function) back up to GitHub.
+- Run a manual end-to-end test of your entire project.
+- Finally, reread the original requirements/objective in the original README.md file to make sure you've hit the brief.

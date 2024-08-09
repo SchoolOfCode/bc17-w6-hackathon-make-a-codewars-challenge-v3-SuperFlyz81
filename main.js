@@ -1,4 +1,13 @@
-// TODO - Write Kata Scenario Here - see original README.md for an example
+/**
+ * Hello brave companion! Your task is to write a function named "findTwoSumIndices".
+ *
+ * This
+ * Your implementation should handle strings whose length is between 0 (inclusive) and 2500 (inclusive).
+ *
+ * A few examples:
+ *    `transformLength("table")` should return -1 as the length of "table" is not even
+ *    `transformLength("wizard")` should return 1 as the length of "wizard" is even
+ */
 export function findTwoSumIndices(numbers, target) {
   // Good luck!
 
